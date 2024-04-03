@@ -24,7 +24,7 @@ async fn main() {
 async fn load_repo() -> Result<(), Error> {
     let now = Instant::now();
 
-    fs::create_dir(SRC_DIR).unwrap();
+    fs::create_dir_all(SRC_DIR).unwrap();
 
     let mut repo = String::new();
 
